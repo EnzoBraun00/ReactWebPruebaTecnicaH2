@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+Catálogo de Productos - Aplicación Web React
+Este repositorio contiene una aplicación web tipo Catálogo de Productos, desarrollada en React.js. El objetivo principal fue construir una herramienta eficiente para la gestión de un inventario de productos, destacar el diseño para el poco tiempo, je.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Implementación y Funcionalidades Clave
 
-## Available Scripts
+El proyecto se diseñó para cumplir con los siguientes puntos críticos, logrando un conjunto de funcionalidades sólidas:
 
-In the project directory, you can run:
+Gestión CRUD Completa:
 
-### `npm start`
+Creación: Integración de un formulario intuitivo para la inserción de nuevos productos con validación de datos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Lectura: Presentación de la información a través de una tabla paginada y ordenable.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Actualización: Funcionalidad de edición in-situ, permitiendo modificar registros existentes de manera fluida.
 
-### `npm test`
+Eliminación: Mecanismo directo para la baja de productos individuales.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Persistencia de Datos (Local Storage): La aplicación implementa persistencia de datos mediante la API de localStorage del navegador. Esto asegura que el estado del catálogo se mantenga entre sesiones, incluso tras el cierre de la aplicación. Para una gestión modular y reusable de esta característica, se desarrolló un Hook personalizado (useLocalStorage).
 
-### `npm run build`
+Paginación del Conjunto de Datos: Para optimizar la experiencia de usuario con grandes volúmenes de datos, se incorporó un sistema de paginación que limita la visualización a un número configurable de productos por página. Esto se complementa con controles de navegación intuitivos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ordenamiento Dinámico: Se ofrece la capacidad de ordenar la lista de productos por nombre (ascendente o descendente), lo que mejora significativamente la capacidad de búsqueda y análisis de datos. Se incluye una opción para restablecer el orden inicial.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Arquitectura y Diseño UI/UX:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+La interfaz de usuario se construyó exclusivamente con React-Bootstrap, utilizando sus clases y componentes para garantizar un diseño responsivo y una estética profesional.
 
-### `npm run eject`
+El código se estructura de forma modular, dividiendo la lógica en componentes (ProductForm, ProductList, Pagination) y encapsulando lógicas complejas en Hooks, lo que favorece la mantenibilidad y escalabilidad.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Validación de Formularios: Se implementaron validaciones client-side en el formulario de ingreso de productos para asegurar la integridad de los datos.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Pruebas Unitarias: Se incluyen pruebas unitarias básicas para los componentes críticos (ProductList.test.js, ProductForm.test.js), utilizando Jest y React Testing Library para validar el comportamiento esperado.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Stack Tecnológico
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+React.js: Core de la aplicación.
 
-## Learn More
+React-Bootstrap: Framework de UI y componentes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Bootstrap CSS: Estilos base y sistema de grid.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+JavaScript (ES6+): Lógica de programación.
 
-### Code Splitting
+HTML5 / CSS3: Estructura y presentación.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Local Storage API: Mecanismo de persistencia de datos.
 
-### Analyzing the Bundle Size
+Jest: Framework de testing.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+React Testing Library: Utilidad para testing de componentes React. Se usaron los componentes de React cuándo lo vi necesario.
 
-### Making a Progressive Web App
+Configuración y Ejecución Local
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Para poner el proyecto en marcha en tu entorno de desarrollo, sigue los siguientes pasos:
 
-### Advanced Configuration
+Clonar el Repositorio:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Bash
+git clone https://github.com/EnzoBraun00/ReactWebPruebaTecnicaH2.git
+cd ReactWebPruebaTecnicaH2
+Instalar Dependencias:
 
-### Deployment
+Bash
+npm install
+Ejecutar la Aplicación (Modo Desarrollo):
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Bash
+npm start
+La aplicación se iniciará en http://localhost:3000/.
 
-### `npm run build` fails to minify
+Ejecutar Pruebas Unitarias:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Bash
+npm test
+Interacción con la Aplicación
+
+Boostrap
+npm install bootstrap react-bootstrap
+
+
+Una vez desplegada localmente:
+
+Añadir Productos: Utiliza el formulario en el panel izquierdo para ingresar datos y haz clic en "Añadir Producto".
+
+Editar Productos: Selecciona "Editar" en la fila del producto deseado. El formulario se pre-llenará y podrás guardar los cambios.
+
+Eliminar Productos: Usa el botón "Eliminar" junto al producto correspondiente en la tabla.
+
+Navegación y Ordenamiento: La tabla soporta paginación y ordenamiento por nombre (A-Z, Z-A, o reset) mediante los controles ubicados sobre ella.
+
+Espero guste, Gracias por la oportunidad, slds, y tengo otro mientras me queda tiempo para hacer, pero con api
