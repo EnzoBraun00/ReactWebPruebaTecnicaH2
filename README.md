@@ -100,20 +100,9 @@ Y
 
 ✅ Production: https://react-prueba-tecnica-h2-9e2drlbiv-enzo-braun-s-projects.vercel.app
 
-Estructura de las clases del Proyecto utilizada
-![image](https://github.com/user-attachments/assets/3b348bd2-26fa-40f0-9e57-755e59e9dcc4)
-
-
-
-
-
-
-
-
-
-
-
-
 Navegación y Ordenamiento: La tabla soporta paginación y ordenamiento por nombre (A-Z, Z-A, o reset) mediante los controles ubicados sobre ella.
 
 Espero guste, Gracias por la oportunidad, slds, y tengo otro mientras me queda tiempo para hacer, pero con api
+
+Estructura de las clases del Proyecto utilizada
+![image](https://github.com/user-attachments/assets/3b348bd2-26fa-40f0-9e57-755e59e9dcc4)
