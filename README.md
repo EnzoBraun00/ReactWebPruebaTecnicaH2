@@ -100,6 +100,10 @@ Y
 
 ✅ Production: https://react-prueba-tecnica-h2-9e2drlbiv-enzo-braun-s-projects.vercel.app
 
+Estructura de las clases del Proyecto utilizada
+![image](https://github.com/user-attachments/assets/3b348bd2-26fa-40f0-9e57-755e59e9dcc4)
+
+
 
 
 
