@@ -86,6 +86,30 @@ Editar Productos: Selecciona "Editar" en la fila del producto deseado. El formul
 
 Eliminar Productos: Usa el botón "Eliminar" junto al producto correspondiente en la tabla.
 
+Conectar con Vercel: 
+
+npm install -g vercel
+
+vercel login
+
+npm run build
+
+vercel
+
+Y
+
+✅ Production: https://react-prueba-tecnica-h2-9e2drlbiv-enzo-braun-s-projects.vercel.app
+
+
+
+
+
+
+
+
+
+
+
 Navegación y Ordenamiento: La tabla soporta paginación y ordenamiento por nombre (A-Z, Z-A, o reset) mediante los controles ubicados sobre ella.
 
 Espero guste, Gracias por la oportunidad, slds, y tengo otro mientras me queda tiempo para hacer, pero con api
